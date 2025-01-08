@@ -1,3 +1,4 @@
+# .devcontainer/Dockerfile
 FROM mcr.microsoft.com/devcontainers/javascript-node:1-20-bookworm
 
 # Install MongoDB command line tools - though mongo-database-tools not available on arm64

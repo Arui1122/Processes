@@ -71,7 +71,7 @@ const createMockData = async () => {
         const posts = [];
         for (const user of savedUsers) {
             for (let i = 0; i < 3; i++) {
-                const text = await generateRandomChineseText("請生成100字內的隨機繁體中文文本");
+                const text = await generateRandomChineseText("請生成100字內的隨機繁體中文或英文文本");
                 posts.push(
                     new Post({
                         user: user._id,

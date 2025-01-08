@@ -1,3 +1,4 @@
+# /backend/dockerfile
 # 使用官方 Node.js 20 Alpine 映像作為基礎映像
 FROM node:20-alpine AS builder
 
