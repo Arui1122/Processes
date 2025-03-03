@@ -1,5 +1,4 @@
-// routes/searchRoutes.ts
-// routes/searchRoutes.ts
+// src/routes/searchRoutes.ts
 import { Router } from "express";
 import { authenticateJWT, optionalAuthenticateJWT } from "@src/middlewares/authenticateJWT";
 import { searchController } from "@src/controllers/searchController";

@@ -24,7 +24,7 @@ export class HotPostService {
     getHotPosts = async (): Promise<IPostDocument[]> => {
         try {
             const hotPostsKey = 'hot:posts';
-            // 獲取熱門貼文，帶有分數
+            // 嘗試從 Redis 獲取快取
             const hotPosts = await redisClient.get(hotPostsKey);
             if (hotPosts) {
                 const posts: IPostDocument[] = JSON.parse(hotPosts);
@@ -41,7 +41,7 @@ export class HotPostService {
     updateHotPosts = async () => {
         try {
             const hotPostsKey = 'hot:posts';
-            // 根據點讚數和評論數排序，獲取前 1000 條熱門貼文
+            // 根據點讚數和評論數排序，獲取前 100 條熱門貼文
             const hotPosts = await Post.find({})
                 .sort({ likesCount: -1, comments: -1, createdAt: -1 })
                 .limit(100)

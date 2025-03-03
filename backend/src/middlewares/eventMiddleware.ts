@@ -1,4 +1,4 @@
-// eventMiddleware.ts
+// src/middlewares/eventMiddleware.ts
 import { query } from 'express-validator';
 
 export const getEventsValidators = [

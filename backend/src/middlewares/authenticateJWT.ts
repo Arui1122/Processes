@@ -1,3 +1,4 @@
+// src/middlewares/authenticateJWT.ts
 import passport from "passport";
 import { Request, Response, NextFunction } from "express";
 import { userService } from "../services/userService"; // 假設你有此 userService

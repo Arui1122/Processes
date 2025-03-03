@@ -1,4 +1,4 @@
-// controllers/postController.ts
+// src/controllers/postController.ts
 import { Request, Response } from 'express';
 import { postService, PostService } from '@src/services/postService';
 import { hotPostService, HotPostService } from '@src/services/hotPostService';

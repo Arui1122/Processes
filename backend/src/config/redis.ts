@@ -1,3 +1,4 @@
+// src/config/redis.ts
 import Redis from "ioredis";
 import RedisMock from "ioredis-mock";
 let redisClient: Redis;

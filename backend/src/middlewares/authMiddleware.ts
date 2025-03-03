@@ -1,4 +1,4 @@
-// authMiddleware.ts
+// src/middlewares/authenticateJWT.ts
 import { body } from 'express-validator';
 
 export const loginValidators = [

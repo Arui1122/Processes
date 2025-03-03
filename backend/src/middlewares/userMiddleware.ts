@@ -1,4 +1,4 @@
-// userMiddleware.ts
+// src/middlewares/userMiddleware.ts
 import { body } from 'express-validator';
 
 export const updateUserProfileValidators = [

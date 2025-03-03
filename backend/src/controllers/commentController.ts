@@ -1,4 +1,4 @@
-// controllers/commentController.ts
+// src/controllers/commentController.ts
 import { Request, Response } from "express";
 import { commentService, CommentService } from "@src/services/commentService";
 import { IUserDocument } from "@src/models/user";

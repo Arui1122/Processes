@@ -1,4 +1,4 @@
-// services/eventService.ts
+// src/services/eventService.ts
 import { Event, IEventDocument } from '@src/models/event';
 import { FilterQuery, Types } from 'mongoose';
 export class EventService {

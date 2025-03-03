@@ -1,4 +1,4 @@
-// /middlewares/commentMiddleware.ts
+// src/middlewares/commentMiddleware.ts
 import { body, param } from 'express-validator';
 
 export const commentIdValidator = [

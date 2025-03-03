@@ -1,4 +1,4 @@
-// services/userService.ts
+// src/services/userService.ts
 import { User, IUserDocument } from "@src/models/user";
 import { Follow } from "@src/models/follow";
 import mongoose, { Types, FilterQuery } from "mongoose";

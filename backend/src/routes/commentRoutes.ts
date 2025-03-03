@@ -1,4 +1,4 @@
-// routes/commentRoutes.ts
+// src/routes/commentRoutes.ts
 import { Router } from "express";
 import { authenticateJWT } from "@src/middlewares/authenticateJWT";
 import { commentIdValidator, commentId_commentValidator } from "@src/middlewares/commentMiddleware";

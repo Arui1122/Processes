@@ -1,4 +1,4 @@
-// routes/postRoutes.ts
+// src/routes/postRoutes.ts
 import { Router } from "express";
 import { authenticateJWT, optionalAuthenticateJWT } from "@src/middlewares/authenticateJWT";
 import { postIdValidator, postId_postValidator, postValidator, getPostValidator, updatePostValidator } from "@src/middlewares/postMiddleware";

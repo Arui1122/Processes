@@ -1,3 +1,4 @@
+// src/controllers/eventController.ts
 import { Request, Response } from "express";
 import { IUserDocument } from "@src/models/user";
 import { eventService, EventService } from "@src/services/eventService";

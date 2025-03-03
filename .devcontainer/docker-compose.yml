@@ -28,6 +28,8 @@ services:
   db:
     image: mongo:latest
     restart: unless-stopped
+    ports:
+      - "27017:27017"
     volumes:
       - mongodb-data:/data/db
     # Uncomment to change startup options
@@ -49,16 +51,16 @@ services:
     environment:
       - discovery.type=single-node
       - xpack.security.enabled=false
-      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - "ES_JAVA_OPTS=-Xms1g -Xmx1g"
     volumes:
       - elasticsearch-data:/usr/share/elasticsearch/data
     networks:
       - default
-    command: >
-      bash -c '
-        bin/elasticsearch-plugin install --batch analysis-smartcn &&
-        /usr/local/bin/docker-entrypoint.sh elasticsearch
-      '
+    # command: >
+    #   bash -c '
+    #     bin/elasticsearch-plugin install --batch analysis-smartcn &&
+    #     /usr/local/bin/docker-entrypoint.sh elasticsearch
+    #   '
 
 volumes:
   mongodb-data:

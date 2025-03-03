@@ -1,3 +1,4 @@
+// src/services/postService.ts
 import { FilterQuery, Types } from 'mongoose';
 import { Post, IPost, IPostDocument } from '@src/models/post';
 import { Comment } from '@src/models/comment';

@@ -1,5 +1,4 @@
 // src/models/follow.ts
-
 import { Schema, Types, model, HydratedDocument } from "mongoose";
 
 export interface IFollow extends Document {

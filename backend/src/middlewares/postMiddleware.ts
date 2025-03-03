@@ -1,4 +1,4 @@
-// /middlewares/postMiddleware.ts
+// src/middlewares/postMiddleware.ts
 import { body, param } from 'express-validator';
 
 export const postIdValidator = [

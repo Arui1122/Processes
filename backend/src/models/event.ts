@@ -1,5 +1,4 @@
 // src/models/event.ts
-
 import { Schema, Types, model, HydratedDocument } from "mongoose";
 import { IUserDocument } from "@src/models/user";
 

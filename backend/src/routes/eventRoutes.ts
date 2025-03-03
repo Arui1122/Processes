@@ -1,4 +1,4 @@
-// routes/eventRoutes.ts
+// src/routes/eventRoutes.ts
 import { Router } from "express";
 import { authenticateJWT } from "@src/middlewares/authenticateJWT";
 import { getEventsValidators } from "@src/middlewares/eventMiddleware";
